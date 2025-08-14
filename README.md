@@ -6,7 +6,7 @@ This project is dedicated to enhancing the performance prediction of solar PV-TE
 
 ## Methodology
 
-We've employed a variety of regressive surrogate machine learning models including Artificial Neural Networks (ANN), Support Vector Regressors (SVR), Gradient Boosting (XGB, LGBM), CatBoost, and Bagging techniques. The models are trained on a rich dataset generated through finite element analysis, incorporating variables such as wind speed, solar irradiance, and ambient temperature. The Jupyter Notebook used for the ML modelling is provided [here](ml4solar.ipynb).
+We've employed a variety of regressive surrogate machine learning models including Artificial Neural Networks (ANN), Support Vector Regressors (SVR), Gradient Boosting (XGB, LGBM), CatBoost, and Bagging techniques. The models are trained on a rich dataset generated through finite element analysis, incorporating variables such as wind speed, solar irradiance, and ambient temperature. The Jupyter Notebook used for the ML modelling is provided [here](notebooks/ml4solar.ipynb).
 
 
 ## Results
@@ -15,7 +15,7 @@ We've employed a variety of regressive surrogate machine learning models includi
 
 Our models have been thoroughly evaluated, and the results highlight their ability to predict power and efficiency with high accuracy. We've summarized the performance of various models like ANN, SVR, XGB, LGBM, CatBoost, and Bagging across different countries in the bar chart below.
 
-![Model Performance Summary](resized_Best_Models_All.png)
+![Model Performance Summary](images/resized_Best_Models_All.png)
 
 *Figure 1: Comparative analysis of machine learning models in predicting solar PV-TE module performance across multiple countries.*
 
@@ -27,25 +27,25 @@ The forecasting phase of our project involved using the optimally trained models
 
 The forecasts display the expected power and efficiency trajectories over time, reflecting the impact of seasonal variations and other factors on the performance of the solar PV-TE systems.
 
-![Forecasting in Antarctica](Antarctica.jpg)
+![Forecasting in Antarctica](images/test_real_vs_predicted/Antarctica.jpg)
 *Figure 2: Forecasted power and efficiencies in Antarctica.*
 
-![Forecasting in Australia](Australia.jpg)
+![Forecasting in Australia](images/test_real_vs_predicted/Australia.jpg)
 *Figure 3: Forecasted power and efficiencies in Australia.*
 
-![Forecasting in Beijing](Beijing.jpg)
+![Forecasting in Beijing](images/test_real_vs_predicted/Beijing.jpg)
 *Figure 4: Forecasted power and efficiencies in Beijing.*
 
-![Forecasting in Berlin](Berlin.jpg)
+![Forecasting in Berlin](images/test_real_vs_predicted/Berlin.jpg)
 *Figure 5: Forecasted power and efficiencies in Berlin.*
 
-![Forecasting in Brasilia](Brasilia.jpg)
+![Forecasting in Brasilia](images/test_real_vs_predicted/Brasilia.jpg)
 *Figure 6: Forecasted power and efficiencies in Brasilia.*
 
-![Forecasting in Pretoria](Pretoria.jpg)
+![Forecasting in Pretoria](images/test_real_vs_predicted/Pretoria.jpg)
 *Figure 7: Forecasted power and efficiencies in Pretoria.*
 
-![Forecasting in Washington](Washington.jpg)
+![Forecasting in Washington](images/test_real_vs_predicted/Washington.jpg)
 *Figure 8: Forecasted power and efficiencies in Washington.*
 
 These figures represent the predictive capabilities of our machine learning models over various locations, indicating robustness and reliability in diverse environmental conditions.
