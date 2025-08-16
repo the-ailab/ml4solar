@@ -8,20 +8,22 @@ This project is dedicated to enhancing the performance prediction of solar PV-TE
 ML4SOLAR/
 ├── backup/                     # Backup files and project versions
 ├── data/                       # Raw and processed datasets
-│   ├── forecasting/           # Time series forecasting datasets
-│   │   ├── cleaned_forecasting_data_subset.csv
-│   │   ├── forecasting_data_power_eff_viz.csv
+│   ├── forecasting/           # Test datasets
+│   │   ├── cleaned_forecasting_data_subset
+│   │   ├── forecasting_data_power_eff_viz
 │   │   └── raw_forecasting_data
-│   └── learning/              # Machine learning training datasets
-│       ├── cleaned_and_joined_full_files
-│       ├── cleaned_and_joined_subset_files
-│       ├── raw_files
-│       └── train_data_power_eff_viz
+│   │── learning/              # Training datasets
+│   │   ├── cleaned_and_joined_full_files
+│   │   ├── cleaned_and_joined_subset_files
+│   │   ├── raw_files
+│   │   └── train_data_power_eff_viz
+│   └──data.md                 # data directory documentation
 ├── images/                    # Visualization outputs and charts
 ├── models/                    # Trained machine learning models
+│   └──models.md                 # models directory documentation
 ├── notebooks/                 # Jupyter notebooks for analysis
 │   ├── bestmodelvisual.py    # Model visualization scripts
-│   └── ml4solar.ipynb       # Main ML modeling notebook
+│   └── ml4solar.ipynb       # Main analysis and ML modeling notebook
 └── README.md                 # Project documentation
 ```
 
@@ -31,8 +33,10 @@ ML4SOLAR/
 - **`data/`**: Houses all datasets used in the project
   - **`forecasting/`**: Contains time series data specifically prepared for forecasting solar power output and efficiency predictions (2022 data precisely)
   - **`learning/`**: Contains processed datasets used for training machine learning models, including cleaned and joined datasets
+  - [data.md](data/data.md): Contains training and forecasting dataset details as well as summary statistics
 - **`images/`**: Stores all generated visualizations, charts, and plots from model performance and forecasting results
 - **`models/`**: Contains all trained and saved machine learning models (ANN, SVR, XGB, LGBM, CatBoost, Bagging models) that can be loaded for inference and further analysis
+   - [models.md](models/models.md): Contains information on model parameter descriptions
 - **`notebooks/`**: Contains Jupyter notebooks and Python scripts for data analysis, model development, and visualization
 
 ## Methodology
@@ -90,7 +94,7 @@ pip install pandas numpy scikit-learn xgboost lightgbm catboost tensorflow matpl
 ### Getting Started
 1. Clone this repository:
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/the-ailab/ml4solar
    cd ML4SOLAR
    ```
 
